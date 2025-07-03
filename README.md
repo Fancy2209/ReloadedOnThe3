@@ -53,7 +53,9 @@ xcopy ./props/switch002.vtx ./props/switch002.dx90.vtx
 xcopy ./props/switch003.vtx ./props/switch003.dx90.vtx
 ```
 
-8. now in this terminal run 
+8. Delete all files from game/portalreloaded/resource/ui/basemodui/, then place https://github.com/Fancy2209/ReloadedOnThe3/raw/refs/heads/main/mainmenu.res in it  
+
+9. now in this terminal run 
 ```sh
 mkdir OUT
 ../bin/makegamedata.exe -r -z OUT/zip1.ps3.zip -ps3
@@ -61,7 +63,7 @@ mkdir OUT/maps
 ```
 then copy all maps with .ps3. to OUT/maps
 
-9. Finally, copy the contents of the OUT folder to portal2_dlc3 in your PS3, it needs to be modded for this to be possible.
+10. Finally, copy the contents of the OUT folder to portal2_dlc3 in your PS3, it needs to be modded for this to be possible.
    
 # Additional Information
 You may notice some issues, like maps only loading on RPCS3 and the videos not showing up  
