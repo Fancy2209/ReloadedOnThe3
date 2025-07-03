@@ -57,8 +57,10 @@ xcopy ./props/switch003.vtx ./props/switch003.dx90.vtx
 ```sh
 mkdir OUT
 ../bin/makegamedata.exe -r -z OUT/zip1.ps3.zip -ps3
-find . -type f -name "*ps3*" -print0 | rsync -av --files-from=- --from0 --relative . OUT/ # TODO: This only works in Linux, it copies all the files with .ps3. in the name so that we only copy the files we actually need, need to find a Windows Version
+mkdir OUT/maps
 ```
+then copy all maps with .ps3. to OUT/maps
+
 9. Finally, copy the contents of the OUT folder to portal2_dlc3 in your PS3, it needs to be modded for this to be possible.
    
 # Additional Information
