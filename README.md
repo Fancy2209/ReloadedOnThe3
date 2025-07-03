@@ -62,8 +62,8 @@ find . -type f -name "*ps3*" -print0 | rsync -av --files-from=- --from0 --relati
 9. Finally, copy the contents of the OUT folder to portal2_dlc3 in your PS3, it needs to be modded for this to be possible.
    
 # Additional Information
-You may notice some issues, like maps only loading on RPCS3 and the videos not showing up
-Some videos are 1440p, so you need to downscale them using the bink tools and then copy the media folder 
-Maps need the Lightmap Scale downgraded, so you'll need to decompile them with BSPSource, and then use hammer to manually set the Lightmap Scale to something like 64 and then recompile them, after that run them trough makegamedata.exe (you can just do something like `../bin/makegamedata.exe path/to/map.bsp -ps3` and it'll convert just the map)
-You will need to rename media/startupvids.txt to media/startupvids.ps3.txt and re run makegamedata to remake the zip for the intro video to show up
+You may notice some issues, like maps only loading on RPCS3 and the videos not showing up  
+Some videos are 1440p, so you need to downscale them using the bink tools and then copy the media folder   
+Maps need the Lightmap Scale downgraded, so you'll need to decompile them with BSPSource, and then use hammer to manually set the Lightmap Scale to something like 64 and then recompile them, after that run them trough makegamedata.exe (you can just do something like `../bin/makegamedata.exe path/to/map.bsp -ps3` and it'll convert just the map)  
+You will need to rename media/startupvids.txt to media/startupvids.ps3.txt and re run makegamedata to remake the zip for the intro video to show up  
 
